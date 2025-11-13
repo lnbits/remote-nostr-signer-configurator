@@ -1,0 +1,29 @@
+{
+  "name": "NSec Remote Signer",
+  "version": "1.0.4",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "./bootloader.bin",
+          "offset": "0x0"
+        },
+        {
+          "path": "./partitions.bin",
+          "offset": "0x8000"
+        },
+        {
+          "path": "./firmware.bin",
+          "offset": "0x10000"
+        }
+      ]
+    }
+  ],
+  "deviceType": "ESP32-S3",
+  "flashSize": "16MB",
+  "flashMode": "dio",
+  "flashFreq": "80m",
+  "uploadSpeed": "921600"
+} 
